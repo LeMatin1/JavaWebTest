@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>WEB01</display-name>
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>com.blb.servlet.QuickStatServlet</servlet-class>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+    </init-param>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/quickStatServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
