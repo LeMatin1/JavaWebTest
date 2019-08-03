@@ -26,9 +26,6 @@ drop table commodityInfo
 
 select * into commodityInfo from commodity_info where 1 =2
 
-update commodityInfo set 
-	commodityMan = 202,
-	commodityName = 'asd',
-	commodityPrice =123,
-	commodityStockId = 12,
-	commodityVaildDate = 'w'
+update commodityInfo set commodityMan = 202,commodityName = 'asd',
+		commodityPrice =123,commodityStockId = 12,commodityVaildDate = 'w'
+		where commodityId=123
